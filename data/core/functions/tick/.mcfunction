@@ -4,4 +4,8 @@
 #
 # @within tag/function minecraft:tick
 
-#
+# プレイヤー処理
+    execute as @a at @s run function player:tick/
+
+# プレイヤー後Tick処理
+    execute as @a at @s run function player:tick/post

@@ -16,4 +16,4 @@
 
 # リセット
     execute if score @s KillCount matches 5.. run scoreboard players set @s KillCount 0
-    advancement revoke @s only core:player_kill_entity
+    advancement revoke @s only player:player_kill_entity
