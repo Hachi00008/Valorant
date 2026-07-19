@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "player_kill_entity" : {
+            "trigger": "player_killed_entity"
+        }
+    },
+    "rewards": {
+        "function": "core:player/kill/"
+    }
+}

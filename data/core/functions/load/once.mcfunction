@@ -69,6 +69,8 @@
         scoreboard objectives add RespawnEvent custom:time_since_death
     # アイテムドロップ
         scoreboard objectives add ItemDropEvent custom:drop
+    # キル回数
+        scoreboard objectives add KillCount dummy
 
 # ステータススコア
     # Health

@@ -1,0 +1,77 @@
+{
+    "multikill_1":{
+        "replace": true,
+        "sounds": [
+            {
+                "name": "valorant:valorant-1-kill",
+                "type": "file",
+                "weight": 1,
+                "stream": true,
+                "attenuation_distance": 16,
+                "preload": false,
+                "volume": 1.5,
+                "pitch": 1.0
+            }
+        ]
+    },
+    "multikill_2": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "valorant:valorant-2-kills",
+                "type": "file",
+                "weight": 1,
+                "stream": true,
+                "attenuation_distance": 16,
+                "preload": false,
+                "volume": 1.5,
+                "pitch": 1.0
+            }
+        ]
+    },
+    "multikill_3": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "valorant:valorant-3-kills",
+                "type": "file",
+                "weight": 1,
+                "stream": true,
+                "attenuation_distance": 16,
+                "preload": false,
+                "volume": 1.5,
+                "pitch": 1.0
+            }
+        ]
+    },
+    "multikill_4": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "valorant:valorant-4-kills",
+                "type": "file",
+                "weight": 1,
+                "stream": true,
+                "attenuation_distance": 16,
+                "preload": false,
+                "volume": 1.5,
+                "pitch": 1.0
+            }
+        ]
+    },
+    "multikill_5": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "valorant:valorant-5-kills",
+                "type": "file",
+                "weight": 1,
+                "stream": true,
+                "attenuation_distance": 16,
+                "preload": false,
+                "volume": 1.5,
+                "pitch": 1.0
+            }
+        ]
+    }
+}
