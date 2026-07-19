@@ -25,10 +25,6 @@
     data modify storage asset:item Item.tag.Valorant.RawName set from storage asset:item RawName
     data modify storage asset:item Item.tag.Valorant.ID set from storage asset:item ID
 
-# 名前設定
-    execute in world:system_area run loot replace block 0 0 0 container.0 loot asset_manager:item/get_name/
-    execute in world:system_area run data modify storage asset:item Item.tag.display.Name set from block 0 0 0 Items[0].tag.display.Name
-
 # その他のタグ
     data modify storage asset:item Item.tag merge from storage asset:item OtherTags
 

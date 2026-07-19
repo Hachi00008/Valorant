@@ -1,4 +1,4 @@
-#> asset:item/debug.test/give/
+#> asset:item/sheriff/give/
 #
 # アイテムデータ設定
 
@@ -7,9 +7,6 @@
 
 # Item本体
     data modify storage asset:item Item set value "tacz:modern_kinetic_gun"
-
-# RawName
-    data modify storage asset:item RawName set value {"text":"Debug Item","color":"dark_purple","italic":false}
 
 # アイテムの種類
     data modify storage asset:item Type set value gun
