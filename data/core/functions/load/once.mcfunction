@@ -1,0 +1,96 @@
+#> core:load/once
+#
+# 一度だけ実行されるLoad Function
+#
+# @within function core:load/
+
+# フレームワーク情報設定
+    data modify storage global: FrameworkVersion set value "0.0.1"
+    data modify storage global: FirstFrameworkVersion set from storage global: FrameworkVersion
+
+# Forceload
+    # System Area
+        execute in world:system_area run forceload add -1 -1 0 0
+
+# シュルカーボックス
+    execute in world:system_area run setblock 0 0 0 lime_shulker_box
+
+# オブジェクト設定
+    # 削除
+        kill 0-0-0-0-0
+        kill 0-0-0-0-1
+    # 召喚
+        execute in world:system_area run summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0]}
+        execute in world:system_area run summon armor_stand 0.0 0.0 0.0 {UUID:[I;0,0,0,0],Marker:true,Invisible:true}
+
+# グローバルスコア
+    scoreboard objectives add Global dummy
+
+# API・Lib用スコア
+    scoreboard objectives add Api dummy
+    scoreboard objectives add Lib dummy
+    # ステータスログ用
+        scoreboard objectives add LibStatusLogRemoveTimer dummy
+
+# 一時スコア
+    scoreboard objectives add Temporary dummy
+
+# 定数スコア
+    scoreboard objectives add Constant dummy
+    # 宣言
+        function core:load/define_constant
+# ID
+    # プレイヤー
+        scoreboard objectives add PlayerID dummy
+    # AssetMob
+        scoreboard objectives add MobID dummy
+    # MobUUID
+        scoreboard objectives add MobUUID dummy
+    # MobUUID
+        scoreboard objectives add ObjectID dummy
+
+# Assetスコア
+    # 汎用Tick
+        scoreboard objectives add GeneralMobTick dummy
+        scoreboard objectives add GeneralObjectTick dummy
+
+# イベントHandler
+    # carrot_on_a_stickクリック
+        scoreboard objectives add ClickCarrotOnAStickEvent used:carrot_on_a_stick
+    # スニーク
+        scoreboard objectives add SneakEvent custom:sneak_time
+    # 初参加
+        scoreboard objectives add FirstJoinEvent custom:play_time
+    # 再参加
+        scoreboard objectives add RejoinEvent custom:leave_game
+    # 死亡
+        scoreboard objectives add DeathEvent deathCount
+    # リスポーン
+        scoreboard objectives add RespawnEvent custom:time_since_death
+    # アイテムドロップ
+        scoreboard objectives add ItemDropEvent custom:drop
+
+# ステータススコア
+    # Health
+        # ステータス
+            scoreboard objectives add Health dummy
+            scoreboard objectives add MaxHealth dummy
+        # 再生クールタイム
+            scoreboard objectives add HealthRegenerationCooldown dummy
+    # HealthRegeneration
+        scoreboard objectives add HealthRegeneration dummy
+    # Shield
+        # ステータス
+            scoreboard objectives add Shield dummy
+            scoreboard objectives add MaxShield dummy
+    # Credit
+        scoreboard objectives add Credit dummy
+
+# Tellraw Prefixの設定
+    data modify storage global: Prefix.Info set value "§a[Valorant] INFO>>>§r "
+    data modify storage global: Prefix.Caution set value "§e[Valorant] CAUTION>>>§r "
+    data modify storage global: Prefix.Error set value "§c[Valorant] ERROR>>>§r "
+    data modify storage global: Prefix.Fatal set value "§5[Valorant] FATAL ERROR>>>§r "
+
+# ゲームルール更新
+    function core:load/define_gamerule
