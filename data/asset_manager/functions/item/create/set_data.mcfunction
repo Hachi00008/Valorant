@@ -22,8 +22,11 @@
 
 # 代入
     data modify storage asset:item Item.id set from storage asset:item BaseItem
-    data modify storage asset:item Item.tag.Valorant.RawName set from storage asset:item RawName
     data modify storage asset:item Item.tag.Valorant.ID set from storage asset:item ID
+    data modify storage asset:item Item.tag.GunCurrentAmmoCount set from storage asset:item AmmoCount
+    data modify storage asset:item Item.tag.HasBulletInBarrel set from storage asset:item HasBulletInBarrel
+    data modify storage asset:item Item.tag.GunFireMode set from storage asset:item FireMode
+    data modify storage asset:item Item.tag.GunId set from storage asset:item GunId
 
 # その他のタグ
     data modify storage asset:item Item.tag merge from storage asset:item OtherTags
