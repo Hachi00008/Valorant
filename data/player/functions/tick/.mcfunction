@@ -19,3 +19,6 @@
 
 # ID割り振り
     execute unless score @s PlayerID matches 0.. run function player:provide_player_id
+
+# アイテム削除
+    clear @s emerald{ShopItem:true}
