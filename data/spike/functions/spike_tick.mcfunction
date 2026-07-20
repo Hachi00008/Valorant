@@ -5,4 +5,9 @@
 #
 # @within function game_core:game_tick/
 
-execute unless entity @a[distance=..2]
+# プレイヤーが近くにいない限り発動しない
+execute unless entity @a[distance=..2, predicate=lib:is_sneaking] run return 0
+
+execute if entity @s[tag=!Defusing] run function spike:defuse/setup
+
+function spike:defuse/
