@@ -2,7 +2,8 @@
 #
 # スパイク設置処理のタグなどの削除
 #
-# @within function spike:
+# @within function spike:cancel
+# @within function spike:done
 
 tag @s remove PlacingSpike
 scoreboard players reset @s Spike.Sneak
