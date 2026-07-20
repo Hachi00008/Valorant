@@ -9,3 +9,6 @@
 
 # プレイヤー後Tick処理
     execute as @a at @s run function player:tick/post
+
+# ゲーム中のTick処理
+    

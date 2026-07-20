@@ -7,10 +7,6 @@
 # 検証
     execute unless data storage asset:item ID run tellraw @a [{"storage": "global:","nbt": "Prefix.Error"},{"text": "引数が不足しています","color": "white"},{"text": " ID","color": "red"}]
     execute unless data storage asset:item Item run tellraw @a [{"storage": "global:","nbt": "Prefix.Error"},{"text": "引数が不足しています","color": "white"},{"text": " Item","color": "red"}]
-    execute unless data storage asset:item AmmoCount run tellraw @a [{"storage": "global:","nbt": "Prefix.Error"},{"text": "引数が不足しています","color": "white"},{"text": " AmmoCount","color": "red"}]
-    execute unless data storage asset:item BulletInBarrel run tellraw @a [{"storage": "global:","nbt": "Prefix.Error"},{"text": "引数が不足しています", "color": "white"},{"text": " BulletInBarrel"}]
-    execute unless data storage asset:item FireMode run tellraw @a [{"storage": "global:","nbt": "Prefix.Error"},{"text": "引数が不足しています","color": "white"},{"text": " FireMode","color": "red"}]
-    execute unless data storage asset:item GunId run tellraw @a [{"storage": "global:","nbt": "Prefix.Error"},{"text": "引数が不足しています","color": "white"},{"text": " GunId","color": "red"}]
 
 # データ設定
     function asset_manager:item/create/set_data
