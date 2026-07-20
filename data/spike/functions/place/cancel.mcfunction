@@ -1,4 +1,4 @@
-#> spike:place/reset
+#> spike:place/cancel
 #
 # スパイク処理のキャンセル
 #
