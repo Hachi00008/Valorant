@@ -4,8 +4,6 @@
 #
 # @within function spike:player_tick
 
-say a
-
 function spike:defuse/reset
 
 execute if score $Defuse Spike >= $DefuseHalf Spike run scoreboard players operation $Defuse Spike = $DefuseHalf Spike
