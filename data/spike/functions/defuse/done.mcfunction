@@ -13,4 +13,4 @@ playsound minecraft:block.anvil.use master @a ~ ~ ~ 5 1 1
 # ログ
 tellraw @a [{"storage": "global:","nbt": "Prefix.Info"},{"text": "スパイクを解除しました。","color": "white"}]
 
-# TODO: 勝利処理を書く
+# TODO: 守りの勝利処理を書く
