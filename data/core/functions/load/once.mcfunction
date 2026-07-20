@@ -96,3 +96,6 @@
 
 # ゲームルール更新
     function core:load/define_gamerule
+
+# スパイク処理用
+    function spike:load
