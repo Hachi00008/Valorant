@@ -14,3 +14,6 @@ playsound minecraft:block.anvil.use master @a ~ ~ ~ 5 1 1
 
 # ログ
 tellraw @a [{"storage": "global:","nbt": "Prefix.Info"},{"text": "スパイクを設置しました。","color": "white"}]
+
+# ストップウォッチの設定
+scoreboard players set $Timer Spike 0
