@@ -1,6 +1,6 @@
-#> spike:
+#> spike:player_tick
 #
-# スパイクのTick処理
+# スパイクのプレイヤーTick処理
 #
 # @within function game_core:game_tick/
 

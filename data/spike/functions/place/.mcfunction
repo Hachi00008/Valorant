@@ -2,7 +2,7 @@
 #
 # スパイクの設置処理。タイマーなど
 #
-# @within function spike:
+# @within function spike:player_tick
 
 execute unless entity @s[tag=PlacingSpike] run function spike:place/setup
 

@@ -2,7 +2,7 @@
 #
 # スパイク処理のキャンセル
 #
-# @within function spike:
+# @within function spike:player_tick
 
 function spike:place/reset
 

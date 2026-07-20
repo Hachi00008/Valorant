@@ -14,4 +14,6 @@ bossbar set valorant:spike visible false
 scoreboard objectives add Spike.Sneak dummy
 
 scoreboard objectives add Spike dummy
-scoreboard players set $Max Spike 100
+scoreboard players set $Max Spike 80
+scoreboard players set $DefuseHalf Spike 70
+scoreboard players set $DefuseMax Spike 140
