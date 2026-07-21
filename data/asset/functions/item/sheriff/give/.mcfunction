@@ -21,7 +21,7 @@
     data modify storage asset:item BulletInBarrel set value true
 
 # その他のNBT(Option)
-    #data modify storage asset:item OtherTags set value {}
+    data modify storage asset:item OtherTags set value {display:{Name:'{"text":""}'},GunDamage:10}
 
 # アイテム入手
     function asset:item/common/give

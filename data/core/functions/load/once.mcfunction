@@ -71,6 +71,11 @@
         scoreboard objectives add ItemDropEvent custom:drop
     # キル回数
         scoreboard objectives add KillCount dummy
+    # ダメージ量
+        scoreboard objectives add TakenDamage minecraft.custom:minecraft.damage_taken
+        scoreboard objectives add HurtTakenDamage dummy
+    # 相手の武器ダメージ
+        scoreboard objectives add AttackerWeaponDamage dummy
 
 # ステータススコア
     # Health
@@ -87,6 +92,7 @@
             scoreboard objectives add MaxShield dummy
     # Credit
         scoreboard objectives add Credit dummy
+        scoreboard objectives add Req_Credit dummy
 
 # Tellraw Prefixの設定
     data modify storage global: Prefix.Info set value "§a[Valorant] INFO>>>§r "

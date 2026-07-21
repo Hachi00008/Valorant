@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "player_hurt":{
+            "trigger": "entity_hurt_player"
+        }
+    },
+    "rewards": {
+        "function": "player:hurt/"
+    }
+}

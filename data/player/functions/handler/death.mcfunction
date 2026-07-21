@@ -4,5 +4,8 @@
 #
 # @within function player:tick/post
 
+# タグ付与
+    tag @s add Death
+
 # スコアリセット
     scoreboard players reset @s DeathEvent

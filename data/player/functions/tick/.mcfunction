@@ -4,6 +4,9 @@
 #
 # @within function core:tick/
 
+# エフェクト付与
+    effect give @s saturation infinite 255 true
+
 # 死亡時タグ付与
     execute if score @s DeathEvent matches 1.. run tag @s add Dead
 
@@ -22,3 +25,6 @@
 
 # アイテム削除
     clear @s emerald{ShopItem:true}
+
+# 
+    function spike:player_tick
