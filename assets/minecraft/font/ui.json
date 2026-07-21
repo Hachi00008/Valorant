@@ -1,10 +1,17 @@
 {
     "providers": [
         {
+            "type": "ttf",
+            "file": "minecraft:custom.ttf",
+            "shift": [0.0, 104.0],
+            "oversample": 1.0,
+            "size": 16
+        },
+        {
             "type": "bitmap",
             "file": "valorant:font/kill.png",
-            "ascent": -110,
-            "height": 80,
+            "ascent": -20,
+            "height": 40,
             "chars": [
                 "\uE000"
             ]
@@ -12,8 +19,8 @@
         {
             "type": "bitmap",
             "file": "valorant:font/headshot_kill.png",
-            "ascent": -110,
-            "height": 80,
+            "ascent": -20,
+            "height": 40,
             "chars": [
                 "\uE001"
             ]

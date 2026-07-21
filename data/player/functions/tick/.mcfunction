@@ -6,6 +6,7 @@
 
 # エフェクト付与
     effect give @s saturation infinite 255 true
+    effect give @s health_boost infinite 255 true
 
 # 死亡時タグ付与
     execute if score @s DeathEvent matches 1.. run tag @s add Dead

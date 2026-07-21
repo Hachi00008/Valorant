@@ -5,13 +5,20 @@
 # @within function player:hurt/
 
 # 殺した人の武器のダメージを取得
-    execute store result score @s AttackerWeaponDamage on attacker run data get entity @s SelectedItem.tag.GunDamage
+    execute store result score @s AttackerWeaponDamage on attacker run data get entity @s SelectedItem.tag.GunDamage 10
 
-    scoreboard players operation @s TakenDamage /= #10 Constant
+    #scoreboard players operation @s TakenDamage /= #10 Constant
 
 # メッセージ
-    execute if score @s AttackerWeaponDamage = @s TakenDamage on attacker run title @s actionbar [{"text": "\uE000","font": "ui","color": "white"}]
-    execute unless score @s AttackerWeaponDamage = @s TakenDamage on attacker run title @s actionbar [{"text": "\uE001","font": "ui","color": "white"}]
+    execute on attacker run title @s times 0 20 10
+    execute on attacker run title @s title ""
+    execute if score @s AttackerWeaponDamage >= @s TakenDamage on attacker run title @s subtitle [{"text": "\uE000","font": "ui","color": "white"}]
+    execute if score @s AttackerWeaponDamage < @s TakenDamage on attacker run title @s subtitle [{"text": "\uE001","font": "ui","color": "white"}]
+
+    execute on attacker run tellraw @a [{"selector": "@s"},{"text": " ---> "},{"selector": "@a[distance=..0.1]"}]
+
+# デバッグ
+    #tellraw @a [{"text": "TakenDamage: "},{"score": {"name": "@s","objective": "TakenDamage"}},{"text": " | AttackerWeaponDamage: "},{"score": {"name": "@s","objective": "AttackerWeaponDamage"}}]
 
 # リセット
-    scoreboard players set @s TakenDamage 0
+    #scoreboard players set @s TakenDamage 0

@@ -4,6 +4,9 @@
 #
 # @within function player:tick/post
 
+# HPスコアを元に戻す
+    scoreboard players operation @s Health = @s MaxHealth
+
 # タグ付与
     tag @s add Death
 

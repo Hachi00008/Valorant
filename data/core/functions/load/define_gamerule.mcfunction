@@ -11,3 +11,4 @@
     gamerule doMobSpawning false
     gamerule doWeatherCycle false
     gamerule mobGriefing false
+    gamerule fallDamage false

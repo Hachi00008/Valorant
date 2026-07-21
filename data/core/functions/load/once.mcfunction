@@ -103,5 +103,20 @@
 # ゲームルール更新
     function core:load/define_gamerule
 
+# チーム作成
+    team add Attacker
+    team add Defender
+
+    # チームの設定
+        team modify Attacker color red
+        team modify Attacker friendlyFire false
+        team modify Attacker nametagVisibility never
+        team modify Attacker deathMessageVisibility never
+
+        team modify Defender color blue
+        team modify Defender friendlyFire false
+        team modify Defender nametagVisibility never
+        team modify Defender deathMessageVisibility never
+
 # スパイク処理用
     function spike:load

@@ -21,7 +21,7 @@
     #data modify storage asset:item BulletInBarrel set value true
 
 # その他のNBT(Option)
-    data modify storage asset:item OtherTags set value {MeleeWeaponId:"lrtactical:karambit"}
+    data modify storage asset:item OtherTags set value {MeleeWeaponId:"lrtactical:karambit",GunDamage:7}
 
 # アイテム入手
     function asset:item/common/give
