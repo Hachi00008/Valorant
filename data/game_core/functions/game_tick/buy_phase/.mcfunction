@@ -5,7 +5,16 @@
 # @within function game_core:game_tick/
 
 # スコアを減らす
-    execute if score $time Timer matches 1.. run scoreboard players remove $time Timer 1
+    execute if score $Time Timer matches 1.. run scoreboard players remove $Time Timer 1
 
-# ショップの設置
-    execute if score $time Timer matches 1 at @e[type=armor_stand,tag=Shop_Pos] run function game_core:game_tick/buy_phase/shop_summon
+# バリア作成
+    execute if score $Time Timer matches 1.. at @e[tag=Phase_Wall] run function game_core:game_tick/buy_phase/phase_wall
+
+# 初期化処理
+    execute if score $Time Timer matches 599 run function game_core:game_tick/buy_phase/init
+
+# タグを削除
+    execute if score $Time Timer matches 0 run function game_core:game_tick/buy_phase/finish
+
+# タイマー描画処理(一番最後に実行)
+    function game_core:game_tick/draw_timer
