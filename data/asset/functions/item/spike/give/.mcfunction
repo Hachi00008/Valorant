@@ -19,9 +19,10 @@
 
 # 弾倉の中に弾が入ってるか(Option)
     #data modify storage asset:item BulletInBarrel set value true
-
+    
 # その他のNBT(Option)
-    data modify storage asset:item OtherTags set value {display:{Name:'[{"translate": "item.valorant.spike","color":"aqua","bold":true}]',Lore:'[{"text":"このアイテムを持ってスニークすることで設置する。","color":"gray","italic":false}]'}}
+    data modify storage asset:item OtherTags.display.Name set value '[{"translate": "item.valorant.spike","color":"aqua","bold":true}]'
+    data modify storage asset:item OtherTags.display.Lore set value '[{"text":"このアイテムを持ってスニークすることで設置する。","color":"gray","italic":false}]'
     
 
 # アイテム入手

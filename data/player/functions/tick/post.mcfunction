@@ -7,8 +7,6 @@
 # イベントハンドラー
     execute if score @s DeathEvent matches 1.. run function player:handler/death
 
-# ショップ
-    execute if entity @s[tag=Shop_Phase] run function shop:menu/
-
 # プレイヤーUI
     title @s actionbar ["",{"translate": "space.16","font": "space"},{"score": {"name": "@s","objective": "Health"},"font": "ui"},{"translate": "space.256","font": "space"}]
+    

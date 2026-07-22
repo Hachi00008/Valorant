@@ -91,8 +91,10 @@
             scoreboard objectives add Shield dummy
             scoreboard objectives add MaxShield dummy
     # Credit
-        scoreboard objectives add Credit dummy
-        scoreboard objectives add Req_Credit dummy
+        scoreboard objectives add money dummy "Credit"
+
+# タイマー
+    scoreboard objectives add Timer dummy
 
 # Tellraw Prefixの設定
     data modify storage global: Prefix.Info set value "§a[Valorant] INFO>>>§r "
@@ -117,6 +119,10 @@
         team modify Defender friendlyFire false
         team modify Defender nametagVisibility never
         team modify Defender deathMessageVisibility never
+
+# ボスバー作成(タイマー表示用) ※白色のボスバーのみ対応
+    bossbar add valorant:timer ""
+    bossbar set valorant:timer color white
 
 # スパイク処理用
     function spike:load

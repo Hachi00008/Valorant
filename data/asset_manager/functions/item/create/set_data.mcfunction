@@ -27,6 +27,7 @@
     data modify storage asset:item Item.tag.HasBulletInBarrel set from storage asset:item HasBulletInBarrel
     data modify storage asset:item Item.tag.GunFireMode set from storage asset:item FireMode
     data modify storage asset:item Item.tag.GunId set from storage asset:item GunId
+    data modify storage asset:item Item.tag.WeaponType set from storage asset:item WeaponType
 
 # その他のタグ
     data modify storage asset:item Item.tag merge from storage asset:item OtherTags

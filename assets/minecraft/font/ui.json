@@ -24,6 +24,15 @@
             "chars": [
                 "\uE001"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "valorant:font/timer.png",
+            "ascent": 27,
+            "height": 60,
+            "chars": [
+                "\uE002"
+            ]
         }
     ]
 }

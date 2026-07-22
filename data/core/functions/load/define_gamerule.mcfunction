@@ -12,3 +12,4 @@
     gamerule doWeatherCycle false
     gamerule mobGriefing false
     gamerule fallDamage false
+    gamerule keepInventory false

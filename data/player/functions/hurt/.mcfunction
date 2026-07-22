@@ -17,7 +17,6 @@
     # 体力の処理
         execute if score @s HurtTakenDamage matches 1.. run scoreboard players operation @s Health -= @s HurtTakenDamage
         
-
 # 死んだ時の処理
     execute if score @s Health matches ..0 run function player:hurt/death
 

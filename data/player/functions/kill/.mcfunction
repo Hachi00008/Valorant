@@ -8,7 +8,7 @@
     scoreboard players add @s KillCount 1
 
 # お金獲得
-    scoreboard players add @s Credit 200
+    scoreboard players add @s money 200
 
 # 音
     execute if score @s KillCount matches 1 run playsound valorant:multikill_1 record @s
