@@ -15,6 +15,3 @@
 
 # タグを削除
     execute if score $Time Timer matches 0 run function game_core:game_tick/buy_phase/finish
-
-# タイマー描画処理(一番最後に実行)
-    function game_core:game_tick/draw_timer

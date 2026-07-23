@@ -5,7 +5,7 @@
 # @within function core:load/
 
 # フレームワーク情報設定
-    data modify storage global: FrameworkVersion set value "0.0.1"
+    data modify storage global: FrameworkVersion set value "0.0.2"
     data modify storage global: FirstFrameworkVersion set from storage global: FrameworkVersion
 
 # Forceload
@@ -95,6 +95,9 @@
 
 # タイマー
     scoreboard objectives add Timer dummy
+
+# 入手したラウンド数
+    scoreboard objectives add GetRound dummy
 
 # Tellraw Prefixの設定
     data modify storage global: Prefix.Info set value "§a[Valorant] INFO>>>§r "

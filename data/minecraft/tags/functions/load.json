@@ -1,6 +1,5 @@
 {
     "values": [
-        "core:load/",
-        "oh_my_dat:sys/load"
+        "core:load/"
     ]
 }

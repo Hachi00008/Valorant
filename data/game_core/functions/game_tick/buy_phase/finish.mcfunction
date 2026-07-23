@@ -13,3 +13,7 @@
 
 # バリア解除
     execute at @e[tag=Phase_Wall] run fill ~ ~ ~ ~ ~2 ~ air replace barrier
+
+# フェーズ変更
+    data modify storage game: Phase set value "Battle"
+    scoreboard players set $Time Timer 2000

@@ -13,3 +13,4 @@
     gamerule mobGriefing false
     gamerule fallDamage false
     gamerule keepInventory false
+    gamerule doImmediateRespawn true

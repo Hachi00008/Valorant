@@ -17,6 +17,7 @@
     execute if score @s RespawnEvent matches 1 run function player:handler/respawn
     execute if entity @s[tag=InRespawnEvent] if score @s RespawnEvent matches 80.. run function player:handler/respawn_delay
     execute if predicate lib:is_sneaking if score @s SneakEvent matches 1.. run function player:handler/sneak
+    execute unless predicate lib:is_sneaking run scoreboard players reset @s SneakEvent
 
 # Playerトリガー処理
     function player_manager:trigger/tick/
