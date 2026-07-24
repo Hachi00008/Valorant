@@ -1,0 +1,10 @@
+{
+    "providers": [
+        {
+            "type": "ttf",
+            "file": "minecraft:custom.ttf",
+            "shift": [0.0,107.0],
+            "size": 8
+        }
+    ]
+}

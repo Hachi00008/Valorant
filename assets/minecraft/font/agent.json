@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "valorant:font/jett.png",
+            "ascent": 5,
+            "height": 16,
+            "chars": [
+                "\uE500"
+            ]
+        }
+    ]
+}

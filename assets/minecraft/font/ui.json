@@ -42,6 +42,42 @@
             "chars": [
                 "\uE003"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "valorant:font/team_bar_left.png",
+            "ascent": 13,
+            "height": 32,
+            "chars": [
+                "\uE004"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "valorant:font/team_bar_right.png",
+            "ascent": 13,
+            "height": 32,
+            "chars": [
+                "\uE005"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "valorant:font/shield_icon.png",
+            "ascent": -200,
+            "height": 16,
+            "chars": [
+                "\uE006"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "valorant:font/empty.png",
+            "ascent": 5,
+            "height": 16,
+            "chars": [
+                "\uE010"
+            ]
         }
     ]
 }

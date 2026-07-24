@@ -10,5 +10,8 @@
 # タグ付与
     tag @s add Death
 
+# タグ削除
+    tag @s remove Death
+
 # スコアリセット
     scoreboard players reset @s DeathEvent

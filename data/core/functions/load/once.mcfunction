@@ -75,7 +75,7 @@
         scoreboard objectives add TakenDamage minecraft.custom:minecraft.damage_taken
         scoreboard objectives add HurtTakenDamage dummy
     # 相手の武器ダメージ
-        scoreboard objectives add AttackerWeaponDamage dummy
+        scoreboard objectives add RedWeaponDamage dummy
 
 # ステータススコア
     # Health
@@ -99,6 +99,9 @@
 # 入手したラウンド数
     scoreboard objectives add GetRound dummy
 
+# エージェント
+    scoreboard objectives add Agent dummy
+
 # Tellraw Prefixの設定
     data modify storage global: Prefix.Info set value "§a[Valorant] INFO>>>§r "
     data modify storage global: Prefix.Caution set value "§e[Valorant] CAUTION>>>§r "
@@ -109,19 +112,19 @@
     function core:load/define_gamerule
 
 # チーム作成
-    team add Attacker
-    team add Defender
+    team add Red
+    team add Blue
 
     # チームの設定
-        team modify Attacker color red
-        team modify Attacker friendlyFire false
-        team modify Attacker nametagVisibility never
-        team modify Attacker deathMessageVisibility never
+        team modify Red color red
+        team modify Red friendlyFire false
+        team modify Red nametagVisibility never
+        team modify Red deathMessageVisibility never
 
-        team modify Defender color blue
-        team modify Defender friendlyFire false
-        team modify Defender nametagVisibility never
-        team modify Defender deathMessageVisibility never
+        team modify Blue color blue
+        team modify Blue friendlyFire false
+        team modify Blue nametagVisibility never
+        team modify Blue deathMessageVisibility never
 
 # ボスバー作成(タイマー表示用) ※白色のボスバーのみ対応
     bossbar add valorant:timer ""
